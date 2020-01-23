@@ -1,0 +1,5 @@
+<div>
+  {{participant.name}}
+  <button *ngIf='!participant.checkedin'(click)='togglecheckin()'>Checkin</button>
+  <button *ngIf='participant.checkedin'(click)='togglecheckin()'>Un-Checkin</button>
+</div>
